@@ -9,22 +9,56 @@
 </head>
 
 <body>
-  <main>
-    <header>
-      <h1>My First Logo</h1>
-    </header>
-    <section>
-      <header>
-        <h2>SVG as a basic image tag:</h2>
-    </header>
-    <div>
+    <h1>My First Logo</h1>
+    <h2>SVG as a basic image tag:</h2>
       <img src="images/my-logo.svg" class="basic-image" />
-    </div>
-    </section>
-    <section>
-      <header>
-        <h2>Inline SVG:</h2>
-      </header>
-  </main>
+    
+   <h2>Inline SVG with added color (fill) to at least 1 path using CSS:</h2>
+   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 450 450">
+    <rect width="450" height="450" fill="#fff"/>
+    <ellipse cx="226.7" cy="225" fill="#FFA6A6" rx="178.8" ry="180.2"/>
+    <ellipse cx="226.7" cy="225" fill="#FFD076" rx="157.3" ry="158.6"/>
+    <ellipse cx="226.7" cy="225" fill="#FCFF7B" rx="135.9" ry="137"/>
+    <ellipse cx="226.7" cy="225" fill="#B7FF9D" rx="114.4" ry="115.3"/>
+    <ellipse cx="226.7" cy="225" fill="#A3EEFF" rx="93" ry="93.7"/>
+    <ellipse cx="226.7" cy="225" fill="#A199FF" rx="71.5" ry="72.1"/>
+    <ellipse cx="226.7" cy="225" fill="#E09DFF" rx="50.1" ry="50.5"/>
+    <g filter="url(#a)">
+      <path fill="url(#b)" d="m321.6 242.1 55.4 99.4 3.1 4-10.4 12.2-41.2 29.2-100.6 17 46-101.7 47.7-60Z"/>
+      <path fill="url(#c)" d="m248.7 241.7 92 162.7-12.3-21.8-42.6 17-38 11.5-50 3.6-42.9-11.2 93.8-161.8Z"/>
+      <path fill="url(#d)" d="m200.3 193.2 92 162.7-185.7-1 93.7-161.7Z"/>
+      <path fill="url(#e)" d="M117.9 241 210 403.8 118 381.5 65.8 331l52-90Z"/>
+    </g>
+    <path fill="#93818A" d="M424 225a198 198 0 0 1-197 199A198 198 0 0 1 30 225 198 198 0 0 1 227 26a198 198 0 0 1 197 199Zm-374.7 0c0 99.1 79.5 179.5 177.7 179.4 98 0 177.6-80.3 177.6-179.4 0-99-79.5-179.4-177.6-179.4A178.6 178.6 0 0 0 49.3 225.1Z"/>
+    <defs>
+      <linearGradient id="b" x1="321.6" x2="320.5" y1="242.1" y2="458.4" gradientUnits="userSpaceOnUse">
+        <stop offset=".1" stop-color="#fff"/>
+        <stop offset=".3" stop-color="silver"/>
+      </linearGradient>
+      <linearGradient id="c" x1="248.7" x2="247.6" y1="241.7" y2="458" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#fff"/>
+        <stop offset=".2" stop-color="silver"/>
+      </linearGradient>
+      <linearGradient id="d" x1="200.3" x2="199.2" y1="193.2" y2="409.5" gradientUnits="userSpaceOnUse">
+        <stop offset=".1" stop-color="#fff"/>
+        <stop offset=".4" stop-color="silver"/>
+        <stop offset=".4" stop-color="silver"/>
+      </linearGradient>
+      <linearGradient id="e" x1="117.9" x2="117.2" y1="241.1" y2="408.2" gradientUnits="userSpaceOnUse">
+        <stop offset=".1" stop-color="#fff"/>
+        <stop offset=".6" stop-color="silver"/>
+      </linearGradient>
+      <filter id="a" width="322.3" height="229.6" x="61.8" y="193.2" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+      </filter>
+    </defs>
+  </svg>
 </body>
 </html>
